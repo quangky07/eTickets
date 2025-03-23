@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vé điện tử E-Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .ticket-info {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .qr-code {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            🎟 Vé Điện Tử - E-Ticket 🎟
+        </div>
+        <div class="content">
+            <p>Xin chào <b>[Tên Khách Hàng]</b>,</p>
+            <p>Bạn đã đặt vé thành công. Dưới đây là thông tin vé của bạn:</p>
+            <div class="ticket-info">
+                <p><b>Mã vé:</b> #123456</p>
+                <p><b>Sự kiện:</b> Concert ABC</p>
+                <p><b>Ngày:</b> 25/03/2025 - 19:00</p>
+                <p><b>Địa điểm:</b> Nhà hát Thành Phố</p>
+            </div>
+            <div class="qr-code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=MAVE123456" alt="QR Code">
+                <p>Vui lòng xuất trình mã QR này khi tham dự sự kiện.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Hotline hỗ trợ: 1900-1234 | Email: support@etickets.com</p>
+        </div>
+    </div>
+</body>
+</html>
